@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021-02-15 16:07:06.000.850,=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Unit3.cpp</Transaction>
+    <Transaction>2021-02-15 16:07:06.000.753,=emsserverapi.bpi</Transaction>
+    <Transaction>2021-02-15 16:07:06.000.753,=rtl.bpi</Transaction>
+    <Transaction>2021-02-17 23:10:27.000.555,=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Unit3.cpp</Transaction>
+    <Transaction>2021-02-17 23:10:27.000.488,=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Project5PCH1.h</Transaction>
+    <Transaction>2021-02-18 03:19:23.710,=emsserverapi.bpi</Transaction>
+    <Transaction>2021-02-18 03:19:23.713,=rtl.bpi</Transaction>
+    <Transaction>2021-02-18 03:19:23.716,=dbrtl.bpi</Transaction>
+    <Transaction>2021-02-18 03:19:23.719,=emsserverresource.bpi</Transaction>
+    <Transaction>2021-02-18 03:19:23.722,=FireDACCommonDriver.bpi</Transaction>
+    <Transaction>2021-02-18 03:19:23.725,=FireDACCommon.bpi</Transaction>
+    <Transaction>2021-02-18 03:19:23.728,=FireDAC.bpi</Transaction>
+    <Transaction>2021-02-18 03:19:23.731,=FireDACIBDriver.bpi</Transaction>
+    <Transaction>2021-02-18 03:19:23.851,=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Unit3.cpp</Transaction>
+    <Transaction>2021-02-18 03:19:57.050,C:\Developer\Embarcadero\SegundaPresentacion\ResourceFireDAC\UFiredacResource.cpp=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Unit3.cpp</Transaction>
+    <Transaction>2021-02-18 03:19:57.050,C:\Developer\Embarcadero\SegundaPresentacion\ResourceFireDAC\UFiredacResource.dfm=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Unit3.dfm</Transaction>
+    <Transaction>2021-02-18 03:19:57.050,C:\Developer\Embarcadero\SegundaPresentacion\ResourceFireDAC\UFiredacResource.h=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Unit3.h</Transaction>
+    <Transaction>2021-02-18 03:20:08.614,C:\Developer\Embarcadero\SegundaPresentacion\ResourceFireDAC\FireDacResourceDemo.cbproj=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Project5.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>

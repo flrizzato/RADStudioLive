@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/09/27 22:06:22.000.851,=C:\Users\Jose Castillo\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2020/09/30 02:05:38.000.757,=C:\Users\Jose Castillo\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2021/02/06 00:43:42.000.924,=C:\Users\Jose Castillo\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2021/02/06 04:00:08.000.804,=C:\Users\Jose Castillo\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2021/02/16 01:19:59.000.198,=C:\Users\Jose Castillo\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2021/02/16 01:21:13.000.196,C:\Users\Jose Castillo\Documents\Embarcadero\Studio\Projects\Unit3.fmx=C:\Users\Jose Castillo\Documents\Embarcadero\Studio\Projects\DashboardFMX\Unit3.fmx</Transaction>
+    <Transaction>2021/02/16 01:21:13.000.196,C:\Users\Jose Castillo\Documents\Embarcadero\Studio\Projects\Unit3.pas=C:\Users\Jose Castillo\Documents\Embarcadero\Studio\Projects\DashboardFMX\Unit3.pas</Transaction>
+    <Transaction>2021/02/16 01:21:23.000.040,C:\Users\Jose Castillo\Documents\Embarcadero\Studio\Projects\Project2.dproj=C:\Users\Jose Castillo\Documents\Embarcadero\Studio\Projects\DashboardFMX\DashboardFMX.dproj</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<Pmac iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>

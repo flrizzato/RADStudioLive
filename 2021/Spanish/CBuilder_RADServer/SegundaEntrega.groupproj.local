@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021-02-18 01:08:22.000.211,C:\Developer\Embarcadero\SegundaPresentacion\SegundEntrega.groupproj=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj</Transaction>
+    <Transaction>2021-02-18 01:08:33.000.277,C:\Developer\Embarcadero\SegundaPresentacion\SegundaEntrega.groupproj=C:\Developer\Embarcadero\SegundaPresentacion\SegundEntrega.groupproj</Transaction>
+  </Transactions>
+	<Default.Personality>
+		<Projects ActiveProject="C:\Developer\Embarcadero\SegundaPresentacion\ClientResourceFireDAC\FireDacResourceClientDemo.cbproj"/>
+	</Default.Personality>
+</BorlandProject>

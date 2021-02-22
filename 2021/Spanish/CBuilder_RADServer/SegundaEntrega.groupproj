@@ -1,0 +1,72 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{3FB92101-43EC-445A-A31C-7754FD168F4F}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Users_Group\UserGroupRADServerDemo.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ResourceSimple\SimpleDemo.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ResourceFireDAC\FireDacResourceDemo.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ClientResourceFireDAC\FireDacResourceClientDemo.cbproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="UserGroupRADServerDemo">
+        <MSBuild Projects="Users_Group\UserGroupRADServerDemo.cbproj"/>
+    </Target>
+    <Target Name="UserGroupRADServerDemo:Clean">
+        <MSBuild Projects="Users_Group\UserGroupRADServerDemo.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="UserGroupRADServerDemo:Make">
+        <MSBuild Projects="Users_Group\UserGroupRADServerDemo.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="SimpleDemo">
+        <MSBuild Projects="ResourceSimple\SimpleDemo.cbproj"/>
+    </Target>
+    <Target Name="SimpleDemo:Clean">
+        <MSBuild Projects="ResourceSimple\SimpleDemo.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SimpleDemo:Make">
+        <MSBuild Projects="ResourceSimple\SimpleDemo.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="FireDacResourceDemo">
+        <MSBuild Projects="ResourceFireDAC\FireDacResourceDemo.cbproj"/>
+    </Target>
+    <Target Name="FireDacResourceDemo:Clean">
+        <MSBuild Projects="ResourceFireDAC\FireDacResourceDemo.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FireDacResourceDemo:Make">
+        <MSBuild Projects="ResourceFireDAC\FireDacResourceDemo.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="FireDacResourceClientDemo">
+        <MSBuild Projects="ClientResourceFireDAC\FireDacResourceClientDemo.cbproj"/>
+    </Target>
+    <Target Name="FireDacResourceClientDemo:Clean">
+        <MSBuild Projects="ClientResourceFireDAC\FireDacResourceClientDemo.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FireDacResourceClientDemo:Make">
+        <MSBuild Projects="ClientResourceFireDAC\FireDacResourceClientDemo.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="UserGroupRADServerDemo;SimpleDemo;FireDacResourceDemo;FireDacResourceClientDemo"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="UserGroupRADServerDemo:Clean;SimpleDemo:Clean;FireDacResourceDemo:Clean;FireDacResourceClientDemo:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="UserGroupRADServerDemo:Make;SimpleDemo:Make;FireDacResourceDemo:Make;FireDacResourceClientDemo:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

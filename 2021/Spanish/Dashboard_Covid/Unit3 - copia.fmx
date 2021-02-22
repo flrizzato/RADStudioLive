@@ -1,0 +1,662 @@
+object Form3: TForm3
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 551
+  ClientWidth = 826
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Panel1: TPanel
+    Align = Top
+    Size.Width = 826.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    object ComboBox1: TComboBox
+      Position.X = 16.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 233.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 10
+      OnChange = ComboBox1Change
+    end
+    object Button1: TButton
+      Position.X = 256.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 11
+      Text = 'Load'
+      OnClick = Button1Click
+    end
+    object titulo: TLabel
+      Align = Right
+      Anchors = [akLeft, akTop, akRight, akBottom]
+      AutoSize = True
+      StyledSettings = [Family, FontColor]
+      Position.X = 368.000000000000000000
+      Size.Width = 458.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 22.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Text = 'COVID-19 Casos Actuales: '
+      TabOrder = 12
+    end
+  end
+  object Panel2: TPanel
+    Align = Left
+    Position.Y = 49.000000000000000000
+    Size.Width = 297.000000000000000000
+    Size.Height = 502.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 14
+    object Label1: TLabel
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 112.000000000000000000
+      Position.Y = 16.000000000000000000
+      TextSettings.Font.Size = 18.000000000000000000
+      Text = 'Total de Casos'
+      TabOrder = 5
+    end
+    object Label2: TLabel
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 16.000000000000000000
+      Position.Y = 144.000000000000000000
+      TextSettings.Font.Size = 16.000000000000000000
+      Text = 'Recuperados'
+      TabOrder = 4
+    end
+    object Label3: TLabel
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 16.000000000000000000
+      Position.Y = 240.000000000000000000
+      Size.Width = 81.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 16.000000000000000000
+      Text = 'Muertes'
+      TabOrder = 0
+    end
+    object Recuperados: TLabel
+      StyledSettings = [Family, FontColor]
+      Position.X = 32.000000000000000000
+      Position.Y = 176.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 28.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.HorzAlign = Center
+      TextSettings.WordWrap = False
+      Text = '10'
+      TabOrder = 3
+    end
+    object Muertes: TLabel
+      StyledSettings = [Family, FontColor]
+      Position.X = 32.000000000000000000
+      Position.Y = 272.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 28.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.HorzAlign = Center
+      TextSettings.WordWrap = False
+      Text = '10'
+      TabOrder = 2
+    end
+    object Totales: TLabel
+      StyledSettings = [Family, FontColor]
+      Position.X = 24.000000000000000000
+      Position.Y = 48.000000000000000000
+      Size.Width = 257.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 48.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.HorzAlign = Center
+      TextSettings.WordWrap = False
+      Text = '10'
+      TabOrder = 1
+    end
+  end
+  object Panel3: TPanel
+    Align = Client
+    Size.Width = 529.000000000000000000
+    Size.Height = 502.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 21
+    object DBChart1: TDBChart
+      Foot.Font.StyleExt = {00040000000200000004000000}
+      SubFoot.Font.StyleExt = {00040000000200000004000000}
+      Title.AutoSize = False
+      Title.Text.Strings = (
+        'Casos por D'#237'a COVID-19')
+      Title.AdjustFrame = False
+      BottomAxis.Axis.Color = xFF111010
+      BottomAxis.Axis.Fill.Color = xFF111010
+      BottomAxis.AxisValuesFormat = '99/99/9999'
+      BottomAxis.LabelsAlternate = True
+      BottomAxis.LabelsFormat.Font.Size = 6.963855266571045000
+      BottomAxis.LabelsMultiLine = True
+      BottomAxis.LabelsOnAxis = False
+      Legend.Title.Font.StyleExt = {00070000000000000004000000}
+      Legend.Visible = False
+      Panning.MouseWheel = pmwNone
+      View3D = False
+      Zoom.Brush.Kind = None
+      Zoom.KeepAspectRatio = True
+      Zoom.MouseWheel = pmwNormal
+      Zoom.Pen.Fill.Color = claSilver
+      Align = Top
+      BevelInner = bvRaised
+      BevelOuter = bvNone
+      TabOrder = 0
+      Size.Width = 529.000000000000000000
+      Size.Height = 170.000000000000000000
+      Size.PlatformDefault = False
+      ColorPaletteIndex = 13
+      object Series1: TLineSeries
+        HoverElement = [heCurrent]
+        Marks.Style = smsValue
+        Marks.Callout.Length = 20
+        DataSource = FDMemTable3
+        XLabelsSource = 'last_update'
+        Brush.BackColor = x00FFFFFF
+        Pointer.InflateMargins = True
+        Pointer.Style = psRectangle
+        XValues.Name = 'X'
+        XValues.Order = loNone
+        XValues.ValueSource = 'deaths'
+        YValues.Name = 'Y'
+        YValues.Order = loNone
+        YValues.ValueSource = 'recovered'
+      end
+      object ChartTool1: TPageNumTool
+        Active = False
+        Shape.Text = 'P'#225'gina 1 de 1'
+        Shape.TextAlignment = taCenter
+        Shape.Visible = False
+        DisabledBrush.Kind = Gradient
+        DisabledBrush.Gradient.EndColor = claSilver
+        DisabledBrush.Gradient.Visible = True
+        DisabledButton.EndColor = claSilver
+        DisabledButton.Visible = True
+        EnabledBrush.Kind = Gradient
+        EnabledBrush.Gradient.EndColor = claSilver
+        EnabledBrush.Gradient.StartColor = claBlack
+        EnabledBrush.Gradient.Visible = True
+        EnabledButton.EndColor = claSilver
+        EnabledButton.StartColor = claBlack
+        EnabledButton.Visible = True
+      end
+    end
+    object DBChart3: TDBChart
+      Position.Y = 175.000000000000000000
+      AllowPanning = pmHorizontal
+      Foot.Font.StyleExt = {00040000000200000004000000}
+      SubFoot.Font.StyleExt = {00040000000200000004000000}
+      Title.Text.Strings = (
+        'TDBChart')
+      BottomAxis.Automatic = False
+      BottomAxis.AutomaticMaximum = False
+      BottomAxis.AutomaticMinimum = False
+      BottomAxis.Maximum = 231.333333333333000000
+      BottomAxis.Minimum = 115.666666666667000000
+      Legend.Title.Font.StyleExt = {00070000000000000004000000}
+      Legend.Visible = False
+      View3D = False
+      Zoom.Brush.Kind = None
+      Zoom.Direction = tzdHorizontal
+      Zoom.Pen.Fill.Color = claSilver
+      Align = Top
+      TabOrder = 1
+      Size.Width = 529.000000000000000000
+      Size.Height = 170.000000000000000000
+      Size.PlatformDefault = False
+      ColorPaletteIndex = 13
+      object Series3: TBarSeries
+        HoverElement = []
+        DataSource = FDMemTable3
+        XLabelsSource = 'last_update'
+        XValues.Name = 'X'
+        XValues.Order = loNone
+        YValues.Name = 'Barra'
+        YValues.Order = loNone
+        YValues.ValueSource = 'cases'
+      end
+      object ChartTool3: TScrollPagerTool
+        DivisionRatio = 6.000000000000000000
+        NoLimitDrag = False
+        Series = Series3
+      end
+      object TSubChartTool
+        ShowInEditor = False
+        Charts = <
+          item
+            Height = 28
+            Left = 0
+            Top = 142
+            Width = 529
+            InnerChart = {
+              545046300B54496E6E65724368617274000A506F736974696F6E2E5905000000
+              000000008E06400C416C6C6F7750616E6E696E670706706D4E6F6E6512466F6F
+              742E466F6E742E5374796C654578740A0D000000000400000002000000040000
+              001A4C6567656E642E5469746C652E466F6E742E5374796C654578740A0D0000
+              00000700000000000000040000000C4D617267696E426F74746F6D02040A4D61
+              7267696E4C65667402030B4D617267696E52696768740203094D617267696E54
+              6F70020415537562466F6F742E466F6E742E5374796C654578740A0D00000000
+              040000000200000004000000125469746C652E546578742E537472696E677301
+              060B54496E6E657243686172740006566965773344080A5A6F6F6D2E416C6C6F
+              77080F5A6F6F6D2E42727573682E4B696E6407044E6F6E65135A6F6F6D2E5065
+              6E2E46696C6C2E436F6C6F720709636C6153696C7665720A53697A652E576964
+              746805000000000000408408400B53697A652E48656967687405000000000000
+              00E003401453697A652E506C6174666F726D44656661756C740811436F6C6F72
+              50616C65747465496E646578020D000E54436F6C6F7242616E64546F6F6C0003
+              546167020105436F6C6F72070978464634343636413306437572736F72070B63
+              7248616E64506F696E740A44726177426568696E640808456E6456616C756505
+              00F85455555555E706400B4E6F4C696D697444726167080B50656E2E56697369
+              626C650809526573697A65456E64090B526573697A655374617274090A537461
+              727456616C75650500105655555555E705400C5472616E73706172656E637902
+              32064178697349440200000E54436F6C6F724C696E65546F6F6C000B44726167
+              52657061696E74090556616C75650500105655555555E7054006417869734944
+              0200000F54416E6E6F746174696F6E546F6F6C000F53686170652E416C69676E
+              6D656E740708746143656E7465721453686170652E536861646F772E56697369
+              626C65081353686170652E54657874416C69676E6D656E740708746143656E74
+              65720D54657874416C69676E6D656E740708746143656E7465720000000E5443
+              6F6C6F724C696E65546F6F6C000B4472616752657061696E74090556616C7565
+              0500F85455555555E70640064178697349440200000F54416E6E6F746174696F
+              6E546F6F6C000F53686170652E416C69676E6D656E740708746143656E746572
+              1453686170652E536861646F772E56697369626C65081353686170652E546578
+              74416C69676E6D656E740708746143656E7465720D54657874416C69676E6D65
+              6E740708746143656E7465720000000000}
+          end>
+        IsScroller = True
+      end
+    end
+    object DBChart5: TDBChart
+      Foot.Font.StyleExt = {00040000000200000004000000}
+      PrintProportional = False
+      SubFoot.Font.StyleExt = {00040000000200000004000000}
+      Title.Text.Strings = (
+        'Muertes Vs Recuperados')
+      DepthTopAxis.DateTimeFormat = 'h:mm AMPM'
+      Legend.Title.Font.StyleExt = {00070000000000000004000000}
+      View3DOptions.Elevation = 315
+      View3DOptions.Orthogonal = False
+      View3DOptions.Perspective = 0
+      View3DOptions.Rotation = 360
+      Zoom.Brush.Kind = None
+      Zoom.Pen.Fill.Color = claSilver
+      Align = Client
+      TabOrder = 2
+      Cursor = crAppStart
+      Size.Width = 529.000000000000000000
+      Size.Height = 152.000000000000000000
+      Size.PlatformDefault = False
+      ColorPaletteIndex = 13
+      object Series5: TDonutSeries
+        HoverElement = []
+        Marks.Style = smsLabelValue
+        Marks.Tail.Margin = 2
+        DataSource = DataSource1
+        XValues.Order = loNone
+        YValues.DateTime = True
+        YValues.Name = 'Pastel'
+        YValues.Order = loNone
+        YValues.ValueSource = 'recovered;deaths'
+        Frame.InnerBrush.Kind = Gradient
+        Frame.InnerBrush.Gradient.EndColor = claGray
+        Frame.InnerBrush.Gradient.MidColor = claWhite
+        Frame.InnerBrush.Gradient.StartColor = xFF404040
+        Frame.InnerBrush.Gradient.Visible = True
+        Frame.InnerBrush.BackColor = claRed
+        Frame.MiddleBrush.Kind = Gradient
+        Frame.MiddleBrush.Gradient.EndColor = xFF828282
+        Frame.MiddleBrush.Gradient.MidColor = claWhite
+        Frame.MiddleBrush.Gradient.StartColor = claGray
+        Frame.MiddleBrush.Gradient.Visible = True
+        Frame.MiddleBrush.BackColor = claYellow
+        Frame.OuterBrush.Kind = Gradient
+        Frame.OuterBrush.Gradient.EndColor = xFF404040
+        Frame.OuterBrush.Gradient.MidColor = claWhite
+        Frame.OuterBrush.Gradient.StartColor = claSilver
+        Frame.OuterBrush.Gradient.Visible = True
+        Frame.OuterBrush.BackColor = claGreen
+        Frame.Width = 4
+        OtherSlice.Legend.Title.Font.StyleExt = {00070000000000000004000000}
+        OtherSlice.Legend.Visible = False
+      end
+      object ChartTool2: TPageNumTool
+        Active = False
+        Shape.Text = 'P'#225'gina 1 de 1'
+        Shape.TextAlignment = taCenter
+        Shape.Visible = False
+        DisabledBrush.Kind = Gradient
+        DisabledBrush.Gradient.EndColor = claSilver
+        DisabledBrush.Gradient.Visible = True
+        DisabledButton.EndColor = claSilver
+        DisabledButton.Visible = True
+        EnabledBrush.Kind = Gradient
+        EnabledBrush.Gradient.EndColor = claSilver
+        EnabledBrush.Gradient.StartColor = claBlack
+        EnabledBrush.Gradient.Visible = True
+        EnabledButton.EndColor = claSilver
+        EnabledButton.StartColor = claBlack
+        EnabledButton.Visible = True
+      end
+    end
+    object Splitter1: TSplitter
+      Align = Top
+      Cursor = crVSplit
+      MinSize = 20.000000000000000000
+      Position.Y = 345.000000000000000000
+      Size.Width = 529.000000000000000000
+      Size.Height = 5.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Splitter2: TSplitter
+      Align = Top
+      Cursor = crVSplit
+      MinSize = 20.000000000000000000
+      Position.Y = 170.000000000000000000
+      Size.Width = 529.000000000000000000
+      Size.Height = 5.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object RESTClient1: TRESTClient
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'utf-8, *;q=0.8'
+    BaseURL = 'https://covid19-api.org/api/countries'
+    Params = <>
+    Left = 24
+    Top = 64
+  end
+  object RESTRequest1: TRESTRequest
+    AssignedValues = [rvConnectTimeout, rvReadTimeout]
+    Client = RESTClient1
+    Params = <>
+    Response = RESTResponse1
+    Left = 88
+    Top = 64
+  end
+  object RESTResponse1: TRESTResponse
+    ContentType = 'application/json'
+    Left = 168
+    Top = 64
+  end
+  object RESTResponseDataSetAdapter1: TRESTResponseDataSetAdapter
+    Dataset = FDMemTable1
+    FieldDefs = <>
+    Response = RESTResponse1
+    TypesMode = Rich
+    Left = 160
+    Top = 144
+  end
+  object FDMemTable1: TFDMemTable
+    FieldDefs = <
+      item
+        Name = 'name'
+        DataType = ftWideString
+        Size = 11
+      end
+      item
+        Name = 'alpha2'
+        DataType = ftWideString
+        Size = 2
+      end
+      item
+        Name = 'alpha3'
+        DataType = ftWideString
+        Size = 3
+      end
+      item
+        Name = 'numeric'
+        DataType = ftInteger
+      end
+      item
+        Name = 'latitude'
+        DataType = ftFloat
+      end
+      item
+        Name = 'longitude'
+        DataType = ftFloat
+      end>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvUpdateChngFields, uvUpdateMode, uvLockMode, uvLockPoint, uvLockWait, uvRefreshMode, uvFetchGeneratorsPoint, uvCheckRequired, uvCheckReadOnly, uvCheckUpdatable]
+    UpdateOptions.LockWait = True
+    UpdateOptions.FetchGeneratorsPoint = gpNone
+    UpdateOptions.CheckRequired = False
+    StoreDefs = True
+    Left = 32
+    Top = 128
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = FDMemTable1
+    ScopeMappings = <>
+    Left = 400
+    Top = 264
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 156
+    Top = 5
+    object LinkFillControlToField: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Track = False
+      FillDataSource = BindSourceDB1
+      FillDisplayFieldName = 'name'
+      AutoFill = True
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkFillControlToField1: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Control = ComboBox1
+      Track = True
+      FillDataSource = BindSourceDB1
+      FillDisplayFieldName = 'name'
+      AutoFill = True
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkPropertyToFieldText: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB2
+      FieldName = 'cases'
+      Component = Totales
+      ComponentProperty = 'Text'
+    end
+    object LinkPropertyToFieldText2: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB2
+      FieldName = 'recovered'
+      Component = Recuperados
+      ComponentProperty = 'Text'
+    end
+    object LinkPropertyToFieldText3: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB2
+      FieldName = 'deaths'
+      Component = Muertes
+      ComponentProperty = 'Text'
+    end
+  end
+  object RESTClient2: TRESTClient
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'utf-8, *;q=0.8'
+    BaseURL = 'https://covid19-api.org/api/status'
+    Params = <>
+    Left = 272
+    Top = 256
+  end
+  object RESTRequest2: TRESTRequest
+    AssignedValues = [rvConnectTimeout, rvReadTimeout]
+    Client = RESTClient2
+    Params = <>
+    Resource = 'PE'
+    Response = RESTResponse2
+    Left = 272
+    Top = 200
+  end
+  object RESTResponse2: TRESTResponse
+    ContentType = 'application/json'
+    Left = 352
+    Top = 200
+  end
+  object RESTResponseDataSetAdapter2: TRESTResponseDataSetAdapter
+    Dataset = FDMemTable2
+    FieldDefs = <>
+    Response = RESTResponse2
+    TypesMode = Rich
+    Left = 336
+    Top = 152
+  end
+  object FDMemTable2: TFDMemTable
+    FieldDefs = <
+      item
+        Name = 'country'
+        DataType = ftWideString
+        Size = 2
+      end
+      item
+        Name = 'last_update'
+        DataType = ftDateTime
+      end
+      item
+        Name = 'cases'
+        DataType = ftFloat
+      end
+      item
+        Name = 'deaths'
+        DataType = ftFloat
+      end
+      item
+        Name = 'recovered'
+        DataType = ftFloat
+      end>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvUpdateChngFields, uvUpdateMode, uvLockMode, uvLockPoint, uvLockWait, uvRefreshMode, uvFetchGeneratorsPoint, uvCheckRequired, uvCheckReadOnly, uvCheckUpdatable]
+    UpdateOptions.LockWait = True
+    UpdateOptions.FetchGeneratorsPoint = gpNone
+    UpdateOptions.CheckRequired = False
+    StoreDefs = True
+    Left = 336
+    Top = 256
+    object FDMemTable2country: TWideStringField
+      FieldName = 'country'
+      Size = 2
+    end
+    object FDMemTable2last_update: TDateTimeField
+      FieldName = 'last_update'
+    end
+    object FDMemTable2cases: TFloatField
+      FieldName = 'cases'
+      DisplayFormat = '###,###,###'
+    end
+    object FDMemTable2deaths: TFloatField
+      FieldName = 'deaths'
+      DisplayFormat = '###,###,###'
+    end
+    object FDMemTable2recovered: TFloatField
+      FieldName = 'recovered'
+      DisplayFormat = '###,###,###'
+    end
+  end
+  object BindSourceDB2: TBindSourceDB
+    DataSet = FDMemTable2
+    ScopeMappings = <>
+    Left = 408
+    Top = 272
+  end
+  object RESTClient3: TRESTClient
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'utf-8, *;q=0.8'
+    BaseURL = 'https://covid19-api.org/api/timeline'
+    Params = <>
+    Left = 24
+    Top = 392
+  end
+  object RESTRequest3: TRESTRequest
+    AssignedValues = [rvConnectTimeout, rvReadTimeout]
+    Client = RESTClient3
+    Params = <>
+    Resource = 'PE'
+    Response = RESTResponse3
+    Left = 88
+    Top = 400
+  end
+  object RESTResponse3: TRESTResponse
+    ContentType = 'application/json'
+    Left = 160
+    Top = 400
+  end
+  object RESTResponseDataSetAdapter3: TRESTResponseDataSetAdapter
+    Active = True
+    Dataset = FDMemTable3
+    FieldDefs = <>
+    Response = RESTResponse3
+    TypesMode = Rich
+    Left = 176
+    Top = 464
+  end
+  object FDMemTable3: TFDMemTable
+    Active = True
+    FieldDefs = <
+      item
+        Name = 'country'
+        DataType = ftWideString
+        Size = 2
+      end
+      item
+        Name = 'last_update'
+        DataType = ftDateTime
+      end
+      item
+        Name = 'cases'
+        DataType = ftFloat
+      end
+      item
+        Name = 'deaths'
+        DataType = ftFloat
+      end
+      item
+        Name = 'recovered'
+        DataType = ftFloat
+      end>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvUpdateChngFields, uvUpdateMode, uvLockMode, uvLockPoint, uvLockWait, uvRefreshMode, uvFetchGeneratorsPoint, uvCheckRequired, uvCheckReadOnly, uvCheckUpdatable]
+    UpdateOptions.LockWait = True
+    UpdateOptions.FetchGeneratorsPoint = gpNone
+    UpdateOptions.CheckRequired = False
+    StoreDefs = True
+    Left = 48
+    Top = 464
+  end
+  object DataSource1: TDataSource
+    DataSet = FDMemTable2
+    Left = 440
+    Top = 201
+  end
+  object DBCrossTabSource1: TDBCrossTabSource
+    Top = 24
+  end
+end

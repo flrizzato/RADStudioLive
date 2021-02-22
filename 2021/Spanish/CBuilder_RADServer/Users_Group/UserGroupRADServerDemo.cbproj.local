@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021-02-15 16:07:06.000.753,=emsserverapi.bpi</Transaction>
+    <Transaction>2021-02-15 16:07:06.000.850,=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Unit3.cpp</Transaction>
+    <Transaction>2021-02-15 16:07:06.000.753,=rtl.bpi</Transaction>
+    <Transaction>2021-02-17 23:10:27.000.488,=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Project5PCH1.h</Transaction>
+    <Transaction>2021-02-17 23:10:27.000.555,=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Unit3.cpp</Transaction>
+    <Transaction>2021-02-18 00:30:15.000.637,=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Project5PCH1.h</Transaction>
+    <Transaction>2021-02-18 00:30:15.000.699,=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Unit3.cpp</Transaction>
+    <Transaction>2021-02-18 00:30:52.000.076,C:\Developer\Embarcadero\SegundaPresentacion\Users_Group\UFrmMain.dfm=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Unit3.dfm</Transaction>
+    <Transaction>2021-02-18 00:30:52.000.076,C:\Developer\Embarcadero\SegundaPresentacion\Users_Group\UFrmMain.cpp=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Unit3.cpp</Transaction>
+    <Transaction>2021-02-18 00:30:52.000.076,C:\Developer\Embarcadero\SegundaPresentacion\Users_Group\UFrmMain.h=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Unit3.h</Transaction>
+    <Transaction>2021-02-18 00:30:53.000.484,C:\Developer\Embarcadero\SegundaPresentacion\Users_Group\Project5PCH1.h=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Project5PCH1.h</Transaction>
+    <Transaction>2021-02-18 00:31:13.000.947,C:\Developer\Embarcadero\SegundaPresentacion\Users_Group\UserGroupRADServerDemoPCH1.h=C:\Developer\Embarcadero\SegundaPresentacion\Users_Group\Project5PCH1.h</Transaction>
+    <Transaction>2021-02-18 00:31:13.000.961,C:\Developer\Embarcadero\SegundaPresentacion\Users_Group\UserGroupRADServerDemo.cbproj=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Project5.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>
