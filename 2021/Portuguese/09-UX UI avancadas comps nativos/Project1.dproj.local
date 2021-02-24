@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/01/16 13:50:46.000.996,=C:\Users\thuli\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/02/22 16:06:00.131,=C:\Users\thuli\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/02/22 16:06:12.910,C:\Users\thuli\Desktop\Design\Unit1.pas=C:\Users\thuli\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/02/22 16:06:12.910,C:\Users\thuli\Desktop\Design\Unit1.dfm=C:\Users\thuli\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/02/22 16:06:14.717,C:\Users\thuli\Desktop\Design\Project1.dproj=C:\Users\thuli\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
