@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{0533EFE9-3EC6-40A8-9946-EBD00DE1C239}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="RadStudioLiveDesktop.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="RadStudioLiveMobile.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="RadStudioLiveDesktop">
+        <MSBuild Projects="RadStudioLiveDesktop.dproj"/>
+    </Target>
+    <Target Name="RadStudioLiveDesktop:Clean">
+        <MSBuild Projects="RadStudioLiveDesktop.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RadStudioLiveDesktop:Make">
+        <MSBuild Projects="RadStudioLiveDesktop.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RadStudioLiveMobile">
+        <MSBuild Projects="RadStudioLiveMobile.dproj"/>
+    </Target>
+    <Target Name="RadStudioLiveMobile:Clean">
+        <MSBuild Projects="RadStudioLiveMobile.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RadStudioLiveMobile:Make">
+        <MSBuild Projects="RadStudioLiveMobile.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="RadStudioLiveDesktop;RadStudioLiveMobile"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="RadStudioLiveDesktop:Clean;RadStudioLiveMobile:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="RadStudioLiveDesktop:Make;RadStudioLiveMobile:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

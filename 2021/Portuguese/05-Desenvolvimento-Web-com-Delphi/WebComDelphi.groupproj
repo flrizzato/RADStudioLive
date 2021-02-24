@@ -1,0 +1,96 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{FA919964-43A1-4FBE-8C02-F0CE8417283C}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="VCL\VCL.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Webbroker\Webbroker.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Intraweb\Intraweb.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Unigui\Unigui.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="RADServer\RADServer.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TMSWebCore\TMSWebCore.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="VCL">
+        <MSBuild Projects="VCL\VCL.dproj"/>
+    </Target>
+    <Target Name="VCL:Clean">
+        <MSBuild Projects="VCL\VCL.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="VCL:Make">
+        <MSBuild Projects="VCL\VCL.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Webbroker">
+        <MSBuild Projects="Webbroker\Webbroker.dproj"/>
+    </Target>
+    <Target Name="Webbroker:Clean">
+        <MSBuild Projects="Webbroker\Webbroker.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Webbroker:Make">
+        <MSBuild Projects="Webbroker\Webbroker.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Intraweb">
+        <MSBuild Projects="Intraweb\Intraweb.dproj"/>
+    </Target>
+    <Target Name="Intraweb:Clean">
+        <MSBuild Projects="Intraweb\Intraweb.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Intraweb:Make">
+        <MSBuild Projects="Intraweb\Intraweb.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Unigui">
+        <MSBuild Projects="Unigui\Unigui.dproj"/>
+    </Target>
+    <Target Name="Unigui:Clean">
+        <MSBuild Projects="Unigui\Unigui.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Unigui:Make">
+        <MSBuild Projects="Unigui\Unigui.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RADServer">
+        <MSBuild Projects="RADServer\RADServer.dproj"/>
+    </Target>
+    <Target Name="RADServer:Clean">
+        <MSBuild Projects="RADServer\RADServer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RADServer:Make">
+        <MSBuild Projects="RADServer\RADServer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TMSWebCore">
+        <MSBuild Projects="TMSWebCore\TMSWebCore.dproj"/>
+    </Target>
+    <Target Name="TMSWebCore:Clean">
+        <MSBuild Projects="TMSWebCore\TMSWebCore.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TMSWebCore:Make">
+        <MSBuild Projects="TMSWebCore\TMSWebCore.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="VCL;Webbroker;Intraweb;Unigui;RADServer;TMSWebCore"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="VCL:Clean;Webbroker:Clean;Intraweb:Clean;Unigui:Clean;RADServer:Clean;TMSWebCore:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="VCL:Make;Webbroker:Make;Intraweb:Make;Unigui:Make;RADServer:Make;TMSWebCore:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

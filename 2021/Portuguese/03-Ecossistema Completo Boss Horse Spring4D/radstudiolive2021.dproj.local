@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/02/23 06:54:05.000.940,C:\Users\juliomar\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\juliomar\Desktop\radstudiolive2021\radstudiolive2021.dproj</Transaction>
+    <Transaction>2021/02/23 06:58:16.000.170,=C:\Users\juliomar\Desktop\radstudiolive2021\Unit1.pas</Transaction>
+    <Transaction>2021/02/23 07:00:22.000.575,C:\Users\juliomar\Desktop\radstudiolive2021\Unit1.pas=C:\Users\juliomar\Desktop\radstudiolive2021\Model\Model.Artista.pas</Transaction>
+    <Transaction>2021/02/23 07:02:40.000.763,=C:\Users\juliomar\Desktop\radstudiolive2021\Unit1.pas</Transaction>
+    <Transaction>2021/02/23 07:07:33.000.031,C:\Users\juliomar\Desktop\radstudiolive2021\Unit1.pas=C:\Users\juliomar\Desktop\radstudiolive2021\Model\Model.Conexao.pas</Transaction>
+  </Transactions>
+</BorlandProject>

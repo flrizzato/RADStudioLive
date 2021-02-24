@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/02/13 17:49:18.000.827,=C:\Users\kmerl\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/02/21 22:12:44.000.970,=emsserverapi.dcp</Transaction>
+    <Transaction>2021/02/21 22:12:45.000.021,=C:\Users\kmerl\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/02/22 02:09:28.000.032,=C:\Users\kmerl\Documents\Embarcadero\Studio\Projects\Project2.html</Transaction>
+    <Transaction>2021/02/22 02:09:28.000.126,=C:\Users\kmerl\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2021/02/22 02:13:44.000.792,C:\Users\kmerl\Documents\Embarcadero\Studio\Projects\Unit3.dfm=D:\temp\palestraweb\Exemplos\TMSWebCore\Unit3.dfm</Transaction>
+    <Transaction>2021/02/22 02:13:44.000.792,C:\Users\kmerl\Documents\Embarcadero\Studio\Projects\Unit3.pas=D:\temp\palestraweb\Exemplos\TMSWebCore\Unit3.pas</Transaction>
+    <Transaction>2021/02/22 02:13:44.000.792,C:\Users\kmerl\Documents\Embarcadero\Studio\Projects\Unit3.html=D:\temp\palestraweb\Exemplos\TMSWebCore\Unit3.html</Transaction>
+    <Transaction>2021/02/22 02:13:54.000.419,C:\Users\kmerl\Documents\Embarcadero\Studio\Projects\Project2.html=D:\temp\palestraweb\Exemplos\TMSWebCore\Project2.html</Transaction>
+    <Transaction>2021/02/22 02:14:00.000.481,C:\Users\kmerl\Documents\Embarcadero\Studio\Projects\Project2.dproj=D:\temp\palestraweb\Exemplos\TMSWebCore\TMSWebCore.dproj</Transaction>
+    <Transaction>2021/02/22 02:15:34.000.661,=D:\temp\palestraweb\Exemplos\Comum\uDmPesquisa.pas</Transaction>
+    <Transaction>2021/02/22 02:18:26.000.876,D:\temp\palestraweb\Exemplos\Comum\uDmPesquisa.pas=</Transaction>
+    <Transaction>2021/02/22 02:19:28.000.683,=D:\temp\palestraweb\Exemplos\TMSWebCore\Unit4.pas</Transaction>
+    <Transaction>2021/02/22 02:20:49.000.710,D:\temp\palestraweb\Exemplos\TMSWebCore\Unit4.pas=D:\temp\palestraweb\Exemplos\TMSWebCore\uDmRestClient.pas</Transaction>
+    <Transaction>2021/02/22 02:20:49.000.710,D:\temp\palestraweb\Exemplos\TMSWebCore\Unit4.dfm=D:\temp\palestraweb\Exemplos\TMSWebCore\uDmRestClient.dfm</Transaction>
+    <Transaction>2021/02/22 02:39:08.000.363,D:\temp\palestraweb\Exemplos\TMSWebCore\uDmRestClient.pas=</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<PMacCamila iOSSimulator="iPhone5"/>
+		<NoProfile Android64="testeKMx86" Android="testeKMx86"/>
+	</ActiveMobileDevice>
+</BorlandProject>

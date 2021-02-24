@@ -1,0 +1,42 @@
+object frmPrincipalDesktop: TfrmPrincipalDesktop
+  Left = 0
+  Top = 0
+  Caption = 'Rad Studio Live Desktop'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object btnEmitirBoleto: TButton
+    Align = MostTop
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Position.X = 5.000000000000000000
+    Position.Y = 5.000000000000000000
+    Size.Width = 630.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Emitir Boleto'
+    OnClick = btnEmitirBoletoClick
+  end
+  object btnAbrirGeradorBoleto: TButton
+    Align = MostTop
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Position.X = 5.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 630.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Abrir Gerador Boleto'
+    OnClick = btnAbrirGeradorBoletoClick
+  end
+end

@@ -1,0 +1,63 @@
+object frmGeradorBoleto: TfrmGeradorBoleto
+  Left = 0
+  Top = 0
+  Caption = 'Gerador Boleto'
+  ClientHeight = 480
+  ClientWidth = 403
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnClose = FormClose
+  DesignerMasterStyle = 0
+  object edtCedente: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Align = MostTop
+    TabOrder = 1
+    Text = 'Empresa XYZ'
+    Position.X = 10.000000000000000000
+    Position.Y = 40.000000000000000000
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 40.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Size.Width = 383.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    object lblCedente: TLabel
+      Position.Y = -20.000000000000000000
+      Text = 'Cedente'
+      TabOrder = 0
+    end
+  end
+  object edtSacado: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Align = MostTop
+    TabOrder = 0
+    Text = 'Tatu'
+    Position.X = 10.000000000000000000
+    Position.Y = 102.000000000000000000
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 40.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Size.Width = 383.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    object lblSacado: TLabel
+      Position.Y = -20.000000000000000000
+      Text = 'Sacado'
+      TabOrder = 0
+    end
+  end
+  object btnGerar: TButton
+    Align = Client
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Size.Width = 383.000000000000000000
+    Size.Height = 336.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Gerar'
+    OnClick = btnGerarClick
+  end
+end

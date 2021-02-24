@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/02/13 17:49:18.000.827,=C:\Users\kmerl\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/02/21 22:12:44.000.970,=emsserverapi.dcp</Transaction>
+    <Transaction>2021/02/21 22:12:45.000.021,=C:\Users\kmerl\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/02/22 02:22:09.969,=emsserverapi.dcp</Transaction>
+    <Transaction>2021/02/22 02:22:10.024,=C:\Users\kmerl\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/02/22 02:22:48.846,=D:\temp\palestraweb\Exemplos\Comum\uDmPesquisa.pas</Transaction>
+    <Transaction>2021/02/22 02:23:08.036,D:\temp\palestraweb\Exemplos\RADServer\Unit1.pas=C:\Users\kmerl\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/02/22 02:23:14.562,D:\temp\palestraweb\Exemplos\Comum\RADServer.dproj=C:\Users\kmerl\Documents\Embarcadero\Studio\Projects\Project2.dproj</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<PMacCamila iOSSimulator="iPhone5"/>
+		<NoProfile Android64="testeKMx86" Android="testeKMx86"/>
+	</ActiveMobileDevice>
+</BorlandProject>

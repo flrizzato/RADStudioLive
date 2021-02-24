@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/02/13 17:49:18.000.827,=C:\Users\kmerl\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/02/21 22:12:44.000.970,=emsserverapi.dcp</Transaction>
+    <Transaction>2021/02/21 22:12:45.000.021,=C:\Users\kmerl\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/02/22 01:30:50.000.914,=C:\Users\kmerl\Documents\Embarcadero\Studio\Projects\WebModuleUnit1.pas</Transaction>
+    <Transaction>2021/02/22 01:30:50.000.237,=C:\Users\kmerl\Documents\Embarcadero\Studio\Projects\FormUnit1.pas</Transaction>
+    <Transaction>2021/02/22 01:32:02.000.251,C:\Users\kmerl\Documents\Embarcadero\Studio\Projects\FormUnit1.pas=D:\temp\palestraweb\Exemplos\Webbroker\FormUnit1.pas</Transaction>
+    <Transaction>2021/02/22 01:32:02.000.251,C:\Users\kmerl\Documents\Embarcadero\Studio\Projects\FormUnit1.dfm=D:\temp\palestraweb\Exemplos\Webbroker\FormUnit1.dfm</Transaction>
+    <Transaction>2021/02/22 01:32:05.000.923,C:\Users\kmerl\Documents\Embarcadero\Studio\Projects\WebModuleUnit1.dfm=D:\temp\palestraweb\Exemplos\Webbroker\WebModuleUnit1.dfm</Transaction>
+    <Transaction>2021/02/22 01:32:05.000.923,C:\Users\kmerl\Documents\Embarcadero\Studio\Projects\WebModuleUnit1.pas=D:\temp\palestraweb\Exemplos\Webbroker\WebModuleUnit1.pas</Transaction>
+    <Transaction>2021/02/22 01:32:10.000.302,C:\Users\kmerl\Documents\Embarcadero\Studio\Projects\Project2.dproj=D:\temp\palestraweb\Exemplos\Webbroker\Webbroker.dproj</Transaction>
+    <Transaction>2021/02/22 01:32:32.000.719,=D:\temp\palestraweb\Exemplos\Comum\uDmPesquisa.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<PMacCamila iOSSimulator="iPhone5"/>
+		<NoProfile Android64="testeKMx86" Android="testeKMx86"/>
+	</ActiveMobileDevice>
+</BorlandProject>

@@ -1,0 +1,125 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 543
+  ClientWidth = 706
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Label1: TLabel
+    StyledSettings = [Family, Size, FontColor]
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Text = 'Device Token'
+    TabOrder = 0
+  end
+  object Label2: TLabel
+    StyledSettings = [Family, Size, FontColor]
+    Position.X = 8.000000000000000000
+    Position.Y = 104.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Text = 'Menagem a enviar'
+    TabOrder = 1
+  end
+  object Label3: TLabel
+    StyledSettings = [Family, Size, FontColor]
+    Position.X = 8.000000000000000000
+    Position.Y = 360.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Text = 'Log'
+    TabOrder = 2
+  end
+  object memoToken: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    TextSettings.WordWrap = True
+    Position.X = 8.000000000000000000
+    Position.Y = 32.000000000000000000
+    Size.Width = 489.000000000000000000
+    Size.Height = 65.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Viewport.Width = 485.000000000000000000
+    Viewport.Height = 61.000000000000000000
+  end
+  object memoMensagem: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    TextSettings.WordWrap = True
+    Position.X = 8.000000000000000000
+    Position.Y = 128.000000000000000000
+    Size.Width = 489.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Viewport.Width = 485.000000000000000000
+    Viewport.Height = 69.000000000000000000
+  end
+  object memoLog: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    TextSettings.WordWrap = True
+    Position.X = 8.000000000000000000
+    Position.Y = 384.000000000000000000
+    Size.Width = 689.000000000000000000
+    Size.Height = 153.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Viewport.Width = 685.000000000000000000
+    Viewport.Height = 149.000000000000000000
+  end
+  object btnAndroid: TButton
+    Position.X = 504.000000000000000000
+    Position.Y = 32.000000000000000000
+    Size.Width = 185.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = 'Envio Local'
+    OnClick = btnAndroidClick
+  end
+  object Label4: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 216.000000000000000000
+    Text = 'Produto ID:'
+    TabOrder = 13
+  end
+  object lstListaProdutos: TListBox
+    Position.X = 8.000000000000000000
+    Position.Y = 248.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 97.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 14
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 196.000000000000000000
+    Viewport.Height = 93.000000000000000000
+  end
+  object Button1: TButton
+    Position.X = 216.000000000000000000
+    Position.Y = 248.000000000000000000
+    TabOrder = 15
+    Text = 'Add'
+    OnClick = Button1Click
+  end
+  object Button5: TButton
+    Position.X = 216.000000000000000000
+    Position.Y = 280.000000000000000000
+    TabOrder = 16
+    Text = 'Limpar'
+    OnClick = Button5Click
+  end
+  object edtProdutoID: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 17
+    Position.X = 110.000000000000000000
+    Position.Y = 216.000000000000000000
+  end
+end

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/02/13 17:49:18.000.827,=C:\Users\kmerl\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/02/21 22:12:44.000.970,=emsserverapi.dcp</Transaction>
+    <Transaction>2021/02/21 22:12:45.000.021,=C:\Users\kmerl\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/02/22 02:22:09.000.969,=emsserverapi.dcp</Transaction>
+    <Transaction>2021/02/22 02:22:10.000.024,=C:\Users\kmerl\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/02/22 02:22:48.000.846,=D:\temp\palestraweb\Exemplos\Comum\uDmPesquisa.pas</Transaction>
+    <Transaction>2021/02/22 02:23:08.000.036,C:\Users\kmerl\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\temp\palestraweb\Exemplos\RADServer\Unit1.pas</Transaction>
+    <Transaction>2021/02/22 02:23:14.000.562,C:\Users\kmerl\Documents\Embarcadero\Studio\Projects\Project2.dproj=D:\temp\palestraweb\Exemplos\Comum\RADServer.dproj</Transaction>
+    <Transaction>2021/02/22 02:23:44.000.563,D:\temp\palestraweb\Exemplos\Comum\RADServer.dproj=D:\temp\palestraweb\Exemplos\RADServer\RADServer.dproj</Transaction>
+    <Transaction>2021/02/22 02:28:20.000.432,=vcl.dcp</Transaction>
+    <Transaction>2021/02/22 02:28:20.000.501,=dbrtl.dcp</Transaction>
+    <Transaction>2021/02/22 02:28:20.000.708,=FireDACCommonDriver.dcp</Transaction>
+    <Transaction>2021/02/22 02:28:20.000.571,=vclFireDAC.dcp</Transaction>
+    <Transaction>2021/02/22 02:28:20.000.657,=FireDAC.dcp</Transaction>
+    <Transaction>2021/02/22 02:28:20.000.756,=FireDACCommon.dcp</Transaction>
+    <Transaction>2021/02/22 02:28:20.000.832,=FireDACIBDriver.dcp</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<PMacCamila iOSSimulator="iPhone5"/>
+		<NoProfile Android64="testeKMx86" Android="testeKMx86"/>
+	</ActiveMobileDevice>
+</BorlandProject>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/02/22 02:02:59.000.982,=D:\temp\palestraweb\Exemplos\Unigui\ServerModule.pas</Transaction>
+    <Transaction>2021/02/22 02:03:00.000.237,=D:\temp\palestraweb\Exemplos\Unigui\MainModule.pas</Transaction>
+    <Transaction>2021/02/22 02:03:05.000.048,=D:\temp\palestraweb\Exemplos\Unigui\Main.pas</Transaction>
+    <Transaction>2021/02/22 02:05:20.000.250,=D:\temp\palestraweb\Exemplos\Comum\uDmPesquisa.pas</Transaction>
+  </Transactions>
+</BorlandProject>

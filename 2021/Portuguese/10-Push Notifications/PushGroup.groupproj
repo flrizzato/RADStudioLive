@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{513A8AEB-C2F1-4350-A85E-414C7F80AB30}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Desktop Exemplo\PushDesktop.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Mobile Android\RADLivePush.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="PushDesktop">
+        <MSBuild Projects="Desktop Exemplo\PushDesktop.dproj"/>
+    </Target>
+    <Target Name="PushDesktop:Clean">
+        <MSBuild Projects="Desktop Exemplo\PushDesktop.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PushDesktop:Make">
+        <MSBuild Projects="Desktop Exemplo\PushDesktop.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RADLivePush">
+        <MSBuild Projects="Mobile Android\RADLivePush.dproj"/>
+    </Target>
+    <Target Name="RADLivePush:Clean">
+        <MSBuild Projects="Mobile Android\RADLivePush.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RADLivePush:Make">
+        <MSBuild Projects="Mobile Android\RADLivePush.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="PushDesktop;RADLivePush"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="PushDesktop:Clean;RADLivePush:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="PushDesktop:Make;RADLivePush:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
