@@ -1,0 +1,131 @@
+#docker run -it -e DB_PORT=3051 -e DB_HOST=192.168.0.204 -e MODULE_NAME=teste -e MODULE_FILE=bplProject1.so -p 80:80 -p 64211:64211 -p 8082:8082 -p 8080:8080 radlive
+
+FROM ubuntu:bionic
+
+ARG dbhost=localhost
+ARG dbport=3050
+ARG password=embtdocker
+ARG dbpath=/Users/Public/Documents/Embarcadero/EMS/EMSSERVER.IB
+
+ARG ModuleName=teste
+ARG ModuleFile=bplProject1.so
+
+
+ENV DB_HOST=$dbhost
+ENV DB_PORT=$dbport
+ENV PA_SERVER_PASSWORD=$password
+ENV DB_PATH=$dbpath
+ENV MODULE_NAME=$ModuleName
+ENV MODULE_FILE=$ModuleFile
+
+
+COPY radserver_docker.sh ./radserver_docker.sh
+
+
+#INSTALL APACHE AND OTHER LIBS
+
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get -yy install --no-install-recommends \
+    apache2 \
+    unzip \
+    xorg libgl1-mesa-dev libosmesa-dev libgtk-3-bin build-essential libcurl3 libcurl-openssl1.0-dev \
+    && apt-get -y autoremove \
+    && apt-get -y autoclean
+#====END OTHER LIBS
+
+#====GET ZIP FILES====
+ADD https://altd.embarcadero.com/releases/studio/21.0/1/RADServerInstallerLinux.1.zip ./radserver.zip
+ADD https://altd.embarcadero.com/releases/studio/21.0/1/PAServer/LinuxPAServer21.0.tar.gz ./paserver.tar.gz
+
+RUN unzip radserver.zip
+RUN tar xvzf paserver.tar.gz
+#========END ZIP FILES
+
+RUN touch ./radserverlicense.slip
+
+RUN sh ./radserver_install.sh -silent
+
+RUN mv PAServer-21.0/* .
+
+#populate emsserver.ini with interbase connection data
+RUN cp /etc/ems/objrepos/emsserver.ini /etc/ems/emsserver.ini
+RUN echo "#!/bin/bash" > ./emsscript.sh
+RUN echo "sed -i 's/\\\r\$//' /etc/ems/emsserver.ini" >> ./emsscript.sh
+RUN echo "sed -i ':a;N;\$!ba;s#\\\[!DBINSTANCENAME\\\]\\\n#$dbhost$ForwardSlash$dbport\\\n#g' /etc/ems/emsserver.ini" >> ./emsscript.sh
+
+
+RUN echo "sed -i ':a;N;\$!ba;s#\\\[!DBPATH\\\]\\\n#$dbpath\\\n#g' /etc/ems/emsserver.ini" >> ./emsscript.sh
+
+#RUN echo "sed -i ':a;N;\$!ba;s#\\\[!DBPATH\\\]\\\n#/Users/Public/Documents/Embarcadero/EMS/EMSSERVER.IB\\\n#g' /etc/ems/emsserver.ini" >> ./emsscript.sh
+
+
+RUN echo "sed -i ':a;N;\$!ba;s#\\\[!DBUSERNAME\\\]\\\n#sysdba\\\n#g' /etc/ems/emsserver.ini" >> ./emsscript.sh
+RUN echo "sed -i ':a;N;\$!ba;s#\\\[!DBPASSWORD\\\]\\\n#masterkey\\\n#g' /etc/ems/emsserver.ini" >> ./emsscript.sh
+RUN echo "sed -i ':a;N;\$!ba;s#\\\[!MASTERSECRET\\\]\\\n# \\\n#g' /etc/ems/emsserver.ini" >> ./emsscript.sh
+RUN echo "sed -i ':a;N;\$!ba;s#\\\[!APPSECRET\\\]\\\n# \\\n#g' /etc/ems/emsserver.ini" >> ./emsscript.sh
+RUN echo "sed -i ':a;N;\$!ba;s#\\\[!APPLICATIONID\\\]\\\n# \\\n#g' /etc/ems/emsserver.ini" >> ./emsscript.sh
+RUN echo "sed -i ':a;N;\$!ba;s#\\\[!SERVERPORT\\\]\\\n#8080\\\n#g' /etc/ems/emsserver.ini" >> ./emsscript.sh
+RUN echo "sed -i ':a;N;\$!ba;s#\\\[!CONSOLEUSER\\\]\\\n#consoleuser\\\n#g' /etc/ems/emsserver.ini" >> ./emsscript.sh
+RUN echo "sed -i ':a;N;\$!ba;s#\\\[!CONSOLEPASS\\\]\\\n#consolepass\\\n#g' /etc/ems/emsserver.ini" >> ./emsscript.sh
+RUN echo "sed -i ':a;N;\$!ba;s#\\\[!CONSOLEPORT\\\]\\\n#8081\\\n#g' /etc/ems/emsserver.ini" >> ./emsscript.sh
+RUN echo "sed -i ':a;N;\$!ba;s#\\\[!RESOURCESFILES\\\]\\\n#/etc/ems/objrepos\\\n#g' /etc/ems/emsserver.ini" >> ./emsscript.sh
+RUN sh ./emsscript.sh
+#=============================end ems population
+
+RUN sed -e '/\/opt\/interbase\/bin\/ibmgr/ { N; d; }' /tmp/rssetup.sh  -i
+RUN sh /tmp/rssetup.sh swaggerui RS,RC,SUI
+
+RUN sh /tmp/apachesetup.sh radserver radconsole RS,RC
+
+#=====CLEAN UP==========
+RUN rm RADServer.bin
+RUN rm radserverlicense.slip
+RUN rm radserver.zip
+RUN rm InterBase_2020_Linux.zip
+RUN rm PAServer-21.0 -r
+RUN rm paserver.tar.gz
+RUN rm radserver_install.sh
+RUN rm /opt/interbase -r
+RUN rm /usr/interbase
+RUN echo "#!/bin/bash" > ./cleaninstnacename.sh
+RUN echo "sed -i ':a;N;\$!ba;s#InstanceName=localhost/3050\\\n#InstanceName=\\\n#g' /etc/ems/emsserver.ini" >> ./cleaninstnacename.sh
+RUN sh ./cleaninstnacename.sh
+RUN rm ./cleaninstnacename.sh
+RUN echo "" > /var/www/html/index.html
+#======END CLEAN UP=====
+
+RUN service apache2 restart
+
+EXPOSE 80 
+EXPOSE 64211
+EXPOSE 8082
+EXPOSE 8080
+
+#need this to make the apache daemon run in foreground
+#prevent container from ending when docker is started
+RUN chmod +x ./radserver_docker.sh
+CMD ./radserver_docker.sh
+
+#MODULE-----------------------------------------------------
+
+COPY $ModuleFile /etc/ems/$ModuleFile
+
+RUN echo "#!/bin/bash" > ./emsscript.sh
+
+#populate emsserver.ini with module data
+ARG FindValue=:a;N;\$!ba;s#\\\[Server\\\.Packages\\\]
+ARG ReplaceValue=#\\\[Server\\\.Packages\\\]
+ARG ForwardSlash=/
+ARG PoundG=#g
+ARG EmsIni=/etc/ems/emsserver.ini
+RUN echo -n "sed -i '" >> ./emsscript.sh
+RUN echo -n "$FindValue" >> ./emsscript.sh
+RUN echo -n "\\" >> ./emsscript.sh
+RUN echo -n "n" >> ./emsscript.sh
+RUN echo -n "$ReplaceValue" >> ./emsscript.sh
+RUN echo -n "\\" >> ./emsscript.sh
+RUN echo -n "n" >> ./emsscript.sh
+RUN echo -n "/etc/ems/$ModuleFile=$ModuleName" >> ./emsscript.sh
+RUN echo -n "$PoundG' " >> ./emsscript.sh
+RUN echo -n "$EmsIni" >> ./emsscript.sh
+RUN echo  "" >> ./emsscript.sh
+RUN sh ./emsscript.sh

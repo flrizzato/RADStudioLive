@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/08/04 10:16:48.000.900,=C:\Users\gabri\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/09/07 21:50:29.000.807,=C:\Users\gabri\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/10/20 11:32:47.000.991,=C:\Users\gabri\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/12/14 14:06:30.000.574,=emsserverapi.dcp</Transaction>
+    <Transaction>2020/12/14 14:06:33.000.318,=C:\Users\gabri\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/01/20 17:01:30.000.390,=C:\Users\gabri\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/01/27 20:44:27.000.469,=C:\Users\gabri\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/02/22 04:38:03.597,=emsserverapi.dcp</Transaction>
+    <Transaction>2021/02/22 04:38:03.757,=C:\Users\gabri\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/02/22 04:38:24.969,E:\Desenvolvimento\RAD Studio Live 2021\Unit1.dfm=C:\Users\gabri\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/02/22 04:38:24.969,E:\Desenvolvimento\RAD Studio Live 2021\Unit1.pas=C:\Users\gabri\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/02/22 04:38:30.132,E:\Desenvolvimento\RAD Studio Live 2021\Project1.dproj=C:\Users\gabri\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5" Android64="RQ8N30BXE5Z" Android="RQ8N30BXE5Z"/>
+		<PiOS2 iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>
