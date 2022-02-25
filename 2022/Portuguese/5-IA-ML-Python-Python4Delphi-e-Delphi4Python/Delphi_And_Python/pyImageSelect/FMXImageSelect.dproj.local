@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/02/15 10:56:20.000.230,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/02/15 10:57:50.000.997,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/02/15 11:02:46.000.777,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/02/15 14:19:31.000.287,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/02/15 14:20:25.000.825,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Delphi_And_Python\FMXImageSelect\uMainForm.pas</Transaction>
+    <Transaction>2022/02/15 14:20:25.000.825,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Delphi_And_Python\FMXImageSelect\uMainForm.fmx</Transaction>
+    <Transaction>2022/02/15 14:20:36.000.009,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Delphi_And_Python\FMXImageSelect\FMXImageSelect.dproj</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile Android="0069683395" Android64="0069683395"/>
+	</ActiveMobileDevice>
+</BorlandProject>

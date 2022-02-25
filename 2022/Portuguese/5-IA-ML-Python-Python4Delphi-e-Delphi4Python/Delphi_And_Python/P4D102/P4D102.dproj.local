@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/12/14 23:53:12.000.761,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/12/14 23:53:47.000.418,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\P4D101\Unit1.dfm=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2020/12/14 23:53:47.000.418,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\P4D101\Unit1.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/12/14 23:53:50.000.136,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\P4D101\Project1.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/02/07 18:25:14.000.790,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Delphi_And_Python\P4D102\P4D102.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Delphi_And_Python\P4D102\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

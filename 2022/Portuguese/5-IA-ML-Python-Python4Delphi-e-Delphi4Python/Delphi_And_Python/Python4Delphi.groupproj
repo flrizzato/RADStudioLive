@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{2CFD7382-8E41-4AC1-9E3D-F9621CF09D1A}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="P4D101\P4D101.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="P4D102\P4D102.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="P4D103\P4D103.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="P4D101">
+        <MSBuild Projects="P4D101\P4D101.dproj"/>
+    </Target>
+    <Target Name="P4D101:Clean">
+        <MSBuild Projects="P4D101\P4D101.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="P4D101:Make">
+        <MSBuild Projects="P4D101\P4D101.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="P4D102">
+        <MSBuild Projects="P4D102\P4D102.dproj"/>
+    </Target>
+    <Target Name="P4D102:Clean">
+        <MSBuild Projects="P4D102\P4D102.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="P4D102:Make">
+        <MSBuild Projects="P4D102\P4D102.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="P4D103">
+        <MSBuild Projects="P4D103\P4D103.dproj"/>
+    </Target>
+    <Target Name="P4D103:Clean">
+        <MSBuild Projects="P4D103\P4D103.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="P4D103:Make">
+        <MSBuild Projects="P4D103\P4D103.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="P4D101;P4D102;P4D103"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="P4D101:Clean;P4D102:Clean;P4D103:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="P4D101:Make;P4D102:Make;P4D103:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
