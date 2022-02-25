@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/02/24 02:13:05.000.252,=C:\Users\marcelo\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2022/02/24 02:13:36.000.803,C:\Users\marcelo\Documents\Embarcadero\Studio\Projects\Unit2.dfm=C:\Users\marcelo\Desktop\MarceloVarelaExemplos\07 REST CEP\Unit2.dfm</Transaction>
+    <Transaction>2022/02/24 02:13:36.000.803,C:\Users\marcelo\Documents\Embarcadero\Studio\Projects\Unit2.pas=C:\Users\marcelo\Desktop\MarceloVarelaExemplos\07 REST CEP\Unit2.pas</Transaction>
+    <Transaction>2022/02/24 02:13:50.000.013,C:\Users\marcelo\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\marcelo\Desktop\MarceloVarelaExemplos\07 REST CEP\RESTCEP.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

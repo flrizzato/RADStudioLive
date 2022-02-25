@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/02/24 02:57:08.000.564,=C:\Users\marcelo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/02/24 02:59:38.000.161,C:\Users\marcelo\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\marcelo\Desktop\MarceloVarelaExemplos\08 OmniThreadLibrary\Unit1.dfm</Transaction>
+    <Transaction>2022/02/24 02:59:38.000.161,C:\Users\marcelo\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\marcelo\Desktop\MarceloVarelaExemplos\08 OmniThreadLibrary\Unit1.pas</Transaction>
+    <Transaction>2022/02/24 02:59:48.000.095,C:\Users\marcelo\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\marcelo\Desktop\MarceloVarelaExemplos\08 OmniThreadLibrary\prOmniThreadLibrary.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

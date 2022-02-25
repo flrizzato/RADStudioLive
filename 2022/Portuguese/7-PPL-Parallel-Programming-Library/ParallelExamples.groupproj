@@ -1,0 +1,108 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{DB87B20F-E6A0-455E-9E7B-01BA5CE3C4B9}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="01 Task\Task01.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="03 TaskChaining\Task02.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="02 Futures\Future01.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="05 ParallelFor02\ParallelFor01.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="04 ParallelSquares\ParallelSquares.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="07 REST CEP\RESTCEP.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="08 OmniThreadLibrary\prOmniThreadLibrary.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Task01">
+        <MSBuild Projects="01 Task\Task01.dproj"/>
+    </Target>
+    <Target Name="Task01:Clean">
+        <MSBuild Projects="01 Task\Task01.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Task01:Make">
+        <MSBuild Projects="01 Task\Task01.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Task02">
+        <MSBuild Projects="03 TaskChaining\Task02.dproj"/>
+    </Target>
+    <Target Name="Task02:Clean">
+        <MSBuild Projects="03 TaskChaining\Task02.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Task02:Make">
+        <MSBuild Projects="03 TaskChaining\Task02.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Future01">
+        <MSBuild Projects="02 Futures\Future01.dproj"/>
+    </Target>
+    <Target Name="Future01:Clean">
+        <MSBuild Projects="02 Futures\Future01.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Future01:Make">
+        <MSBuild Projects="02 Futures\Future01.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ParallelFor01">
+        <MSBuild Projects="05 ParallelFor02\ParallelFor01.dproj"/>
+    </Target>
+    <Target Name="ParallelFor01:Clean">
+        <MSBuild Projects="05 ParallelFor02\ParallelFor01.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ParallelFor01:Make">
+        <MSBuild Projects="05 ParallelFor02\ParallelFor01.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ParallelSquares">
+        <MSBuild Projects="04 ParallelSquares\ParallelSquares.dproj"/>
+    </Target>
+    <Target Name="ParallelSquares:Clean">
+        <MSBuild Projects="04 ParallelSquares\ParallelSquares.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ParallelSquares:Make">
+        <MSBuild Projects="04 ParallelSquares\ParallelSquares.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RESTCEP">
+        <MSBuild Projects="07 REST CEP\RESTCEP.dproj"/>
+    </Target>
+    <Target Name="RESTCEP:Clean">
+        <MSBuild Projects="07 REST CEP\RESTCEP.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RESTCEP:Make">
+        <MSBuild Projects="07 REST CEP\RESTCEP.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="prOmniThreadLibrary">
+        <MSBuild Projects="08 OmniThreadLibrary\prOmniThreadLibrary.dproj"/>
+    </Target>
+    <Target Name="prOmniThreadLibrary:Clean">
+        <MSBuild Projects="08 OmniThreadLibrary\prOmniThreadLibrary.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="prOmniThreadLibrary:Make">
+        <MSBuild Projects="08 OmniThreadLibrary\prOmniThreadLibrary.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Task01;Task02;Future01;ParallelFor01;ParallelSquares;RESTCEP;prOmniThreadLibrary"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Task01:Clean;Task02:Clean;Future01:Clean;ParallelFor01:Clean;ParallelSquares:Clean;RESTCEP:Clean;prOmniThreadLibrary:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Task01:Make;Task02:Make;Future01:Make;ParallelFor01:Make;ParallelSquares:Make;RESTCEP:Make;prOmniThreadLibrary:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

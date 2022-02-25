@@ -1,0 +1,46 @@
+unit Unit2;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, REST.Types, FireDAC.Stan.Intf,
+  FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS,
+  FireDAC.Phys.Intf, FireDAC.DApt.Intf, Data.DB, FireDAC.Comp.DataSet,
+  FireDAC.Comp.Client, REST.Response.Adapter, REST.Client, Data.Bind.Components,
+  Data.Bind.ObjectScope, Vcl.ExtCtrls;
+
+type
+  TForm2 = class(TForm)
+    RESTClient1: TRESTClient;
+    RESTRequest1: TRESTRequest;
+    RESTResponse1: TRESTResponse;
+    RESTResponseDataSetAdapter1: TRESTResponseDataSetAdapter;
+    FDMemTable1: TFDMemTable;
+    FDMemTable1cep: TWideStringField;
+    FDMemTable1logradouro: TWideStringField;
+    FDMemTable1complemento: TWideStringField;
+    FDMemTable1bairro: TWideStringField;
+    FDMemTable1localidade: TWideStringField;
+    FDMemTable1uf: TWideStringField;
+    FDMemTable1ibge: TIntegerField;
+    FDMemTable1gia: TIntegerField;
+    FDMemTable1ddd: TIntegerField;
+    FDMemTable1siafi: TIntegerField;
+    Panel1: TPanel;
+    Panel2: TPanel;
+    Panel3: TPanel;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+
+implementation
+
+{$R *.dfm}
+
+end.
